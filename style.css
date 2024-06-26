@@ -22,9 +22,19 @@ textarea{
   background-color: #FFEE88;
   height: 350px;
   font-size: 30px;
-  padding: 30px 20px 20px 20px;
+  padding: 50px 20px 20px 20px;
 }
 i{
   font-size: 24px;
   opacity: 0.8;
+}
+#proceed{
+position: absolute;
+right:10%;
+bottom: 5%;
+}
+#exit{
+  position: absolute;
+  left: 5%;
+  top: 5%;
 }
