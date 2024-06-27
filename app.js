@@ -23,11 +23,13 @@ function createNote(){
 }
 
 function margin(){
+let margins = ["-5px","1px","5px","10px","15px","20px"]
 
+return margins[Math.floor(Math.random() * margins.length)];
 }
 function rotate(){
 
 }
 function color(){
-  
+
 }

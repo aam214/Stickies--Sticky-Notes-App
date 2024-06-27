@@ -1,5 +1,9 @@
 .body{
   background-color: #4C5C68;
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+  font-style: normal;
+
 }
 .container{
   margin: 0 auto;
