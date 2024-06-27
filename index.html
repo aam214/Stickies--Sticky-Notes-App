@@ -14,16 +14,19 @@
   <title>Stickies📄</title>
 </head>
 <body class="body">
-
-  <div class="container">
+  <h1 class="title">Sticky Board</h1>
+<section>
   <button class="edit-button" onClick="typeNote()">Create Note</button>
+  <div class="text-container">
+    <textarea class="input-field" id="note-text" placeholder="Start typing..." maxlength="98"></textarea>
+    <i class="fa-solid fa-arrow-right" id="proceed"></i>
+    <i class="fa-solid fa-xmark" id="exit"></i>
+    </div>
+  </section>
+  <div class="container">
+  
   <div class="container1"></div>
   <div class="notes-container"></div>
-  <div class="text-container">
-<textarea id="note-text" placeholder="Start typing..." maxlength="98"></textarea>
-<i class="fa-solid fa-arrow-right" id="proceed"></i>
-<i class="fa-solid fa-xmark" id="exit"></i>
-</div>
 </div>
 <script src="app.js"></script>
 </body>
