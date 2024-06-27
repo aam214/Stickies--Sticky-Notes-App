@@ -19,7 +19,12 @@ function exitNote(){
 }
 
 function createNote(){
+  if (textContainer.style.display == "none"){
+    textContainer.style.display = "block";
+  }else{
+   textContainer.style.display = "none";
   
+  }
 }
 
 function margin(){

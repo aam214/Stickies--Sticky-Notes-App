@@ -5,6 +5,15 @@
   font-style: normal;
 
 }
+.create-button{
+  color: white;
+  background-color: black;
+  padding: 20px 40px;
+  font-size: 20px;
+cursor: pointer;
+  border-radius: 12px;
+  box-shadow:10px 10px 20px rgba(0, 0, 0, 0.2);
+}
 .container{
   margin: 0 auto;
   display: block;
@@ -17,14 +26,15 @@
   margin-left: 10px;
   margin-top: 30px;
 }
-.box3{
+.text-container{
 position: absolute;
+display: none;
 }
 textarea{
   box-shadow: 8px 8px 15px 0px rgba(0,0,0,0.5);
   width: 370px;
   background-color: #FFEE88;
-  height: 350px;
+  height: 370px;
   font-size: 30px;
   padding: 50px 20px 20px 20px;
 }
