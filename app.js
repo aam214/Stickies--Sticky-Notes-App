@@ -31,6 +31,13 @@ textBox1.style.margin = margin();
 textBox1.style.transform = rotate();
 textBox1.style.background= color();
 notesContainer.insertAdjacentElement("beforeend", textBox1);
+
+textBox1.addEventListener("mouseenter", () =>{
+  textBox1.style.transform = "scale(1.08)";
+})
+textBox1.addEventListener("mouseleave", () =>{
+textBox1.style.transform = "scale(1.0)";
+})
 }
 function typeNote(){
   if (textContainer.style.display == "none"){
