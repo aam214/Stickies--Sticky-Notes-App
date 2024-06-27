@@ -6,10 +6,8 @@ let exit = document.getElementById("exit");
 var i = 0;
 
 exit.addEventListener("click", () => {
-exitNote();
+typeNote();
 })
-
-
 proceed.addEventListener("click", () => {
 createNote();
 })
@@ -19,6 +17,22 @@ function exitNote(){
 }
 
 function createNote(){
+let noteText = document.getElementById("note-text").value;
+let textBox1 = document.createElement("div");
+let textBox2 = document.createElement("h2");
+
+textBox1.innerHTML = noteText;
+textBox1.setAttribute
+("style", "width:370px; margin: 28px; height: 370px; font-size:30px; padding: 25px; margin-top: 10px; overflow: hidden; box-shadow:0px 10px 24px 0px rgba(0,0,0,0.75)")
+
+
+textBox1.appendChild(textBox2);
+textBox1.style.margin = margin();
+textBox1.style.transform = rotate();
+textBox1.style.background= color();
+notesContainer.insertAdjacentElement("beforeend", textBox1);
+}
+function typeNote(){
   if (textContainer.style.display == "none"){
     textContainer.style.display = "block";
   }else{
