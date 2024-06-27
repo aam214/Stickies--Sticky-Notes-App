@@ -1,22 +1,33 @@
 .body{
-  background-color: #cfb29f;
+ background-color: #d89a71;
   font-weight: 400;
   font-family: "Kalam", cursive;
   font-style: normal;
 }
 .title{
   margin-top: 25px;
-  margin-left: 44px;
-font-size: 50px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  color: white;
+  background-color: black;
+  border: 2px solid black;
+  padding: 20px 10px 10px 20px;
+  letter-spacing: 1.2px;
+  text-align: center;
+  font-style: normal;
+margin: 37px;
+border-radius: 8px;
+font-size: 54px;
 }
 section{
   margin-left: 44px;
 }
 .edit-button{
   color: white;
+
   background-color: black;
-  padding: 10px 15px;
-  font-size: 20px;
+  padding: 10px 17px;
+  font-size: 24px;
   cursor: pointer;
   margin: 20px;
   border-radius: 12px;
@@ -41,7 +52,8 @@ display: none;
 .input-field{
   box-shadow: 8px 8px 15px 0px rgba(0,0,0,0.5);
   width: 300px;
-  background-color:#EFF6EE;
+  border: none;
+  background-color:#ffe881;
   height: 300px;
   font-size: 1.7rem;
   padding: 50px 20px 20px 20px;
@@ -53,7 +65,7 @@ i{
 }
 #proceed{
 position: absolute;
-right:10%;
+right:8%;
 bottom: 5%;
 }
 #exit{
