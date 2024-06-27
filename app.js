@@ -1,7 +1,7 @@
-let notesContainer = document.querySelector(".notes-container");
-let textContainer = document.querySelector(".text-container");
-let proceed = document.getElementById("proceed");
-let exit = document.getElementById("exit");
+const notesContainer = document.querySelector(".notes-container");
+const textContainer = document.querySelector(".text-container");
+const proceed = document.getElementById("proceed");
+const exit = document.getElementById("exit");
 
 var i = 0;
 
@@ -23,7 +23,7 @@ let textBox2 = document.createElement("h2");
 
 textBox1.innerHTML = noteText;
 textBox1.setAttribute
-("style", "width:370px; margin: 28px; height: 370px; font-size:30px; padding: 25px; margin-top: 10px;box-shadow:0px 10px 24px 0px rgba(0,0,0,0.75)")
+("style", "width:370px; margin-top: 28px; height: 370px; font-size:30px; padding: 25px; margin-top: 10px;box-shadow:0px 10px 24px 0px rgba(0,0,0,0.75)")
 
 
 textBox1.appendChild(textBox2);
@@ -32,12 +32,11 @@ textBox1.style.transform = rotate();
 textBox1.style.background= color();
 notesContainer.insertAdjacentElement("beforeend", textBox1);
 
-textBox1.addEventListener("mouseenter", () =>{
-  textBox1.style.transform = "scale(1.08)";
+textBox1.addEventListener("dblclick", () =>{
+  textBox1.remove();
 })
-textBox1.addEventListener("mouseleave", () =>{
-textBox1.style.transform = "scale(1.0)";
-})
+
+document.getElementById("note-text").value = "";
 }
 function typeNote(){
   if (textContainer.style.display == "none"){
