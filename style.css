@@ -71,17 +71,19 @@ display: none;
   padding: 50px 20px 20px 20px;
 }
 i{
-  font-size: 24px;
-  opacity: 0.8;
+  font-size: 27px;
+  opacity: 0.9;
   cursor: pointer;
+ 
 }
-#proceed{
-position: relative;
-right:4%;
-bottom: 10%;
-}
-#exit{
-  position: absolute;
-  left: 1%;
-  top: 5%;
-}
+  #exit{
+    position: absolute;
+    left: 1%;
+    top: 5%;
+  }
+  #proceed{
+    font-size: 50px;
+    margin-left: 10px;
+   color: black;
+  }
+
