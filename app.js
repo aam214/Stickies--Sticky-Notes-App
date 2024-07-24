@@ -23,7 +23,7 @@ let newBox = document.createElement("div");
 
 stickyNote.innerHTML = noteText;
 stickyNote.setAttribute
-("style", "width:370px; margin: 28px; height: 370px; font-size:30px; padding: 25px; margin-top: 10px;box-shadow:0px 10px 24px 0px rgba(0,0,0,0.75)")
+("style", "width:370px; margin: 20px; height: 370px; font-size:30px; padding: 25px; margin-top: 10px;box-shadow:0px 10px 24px 0px rgba(0,0,0,0.75)")
 
 
 stickyNote.appendChild(newBox);
