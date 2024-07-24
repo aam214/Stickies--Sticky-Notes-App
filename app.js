@@ -19,20 +19,20 @@ function exitNote(){
 function createNote(){
 let noteText = document.getElementById("note-text").value;
 let stickyNote = document.createElement("div");
-let box2 = document.createElement("h2");
+let newBox = document.createElement("div");
 
 stickyNote.innerHTML = noteText;
 stickyNote.setAttribute
 ("style", "width:370px; margin: 28px; height: 370px; font-size:30px; padding: 25px; margin-top: 10px;box-shadow:0px 10px 24px 0px rgba(0,0,0,0.75)")
 
 
-stickyNote.appendChild(box2);
+stickyNote.appendChild(newBox);
 stickyNote.style.margin = margin();
 stickyNote.style.transform = rotate();
 stickyNote.style.background= color();
 notesContainer.insertAdjacentElement("beforeend", stickyNote);
-stickyNote.addEventListener("dblclick", () =>{
-  textBox1.remove();
+stickyNote.addEventListener("click", () =>{
+  stickyNote.remove();
 })
 document.getElementById("note-text").value = "";
 }
