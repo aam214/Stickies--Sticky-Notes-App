@@ -1,17 +1,20 @@
 .body{
- background-color: #233142;
+ background-color: #9d9fa1;
+
   font-weight: 400;
   font-family: "Kalam", cursive;
   font-style: normal;
+}
+header{
+  background-color: black;
+  border: 2px solid black;
+  padding: 50px 90px 50px 90px; 
 }
 .title{
   margin-top: 25px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   color: white;
-  background-color: black;
-  border: 2px solid black;
-  padding: 20px 10px 10px 20px;
   letter-spacing: 1.2px;
   text-align: center;
   font-style: normal;
