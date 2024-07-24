@@ -18,26 +18,25 @@ function exitNote(){
 
 function createNote(){
 let noteText = document.getElementById("note-text").value;
-let textBox1 = document.createElement("div");
+let stickyNote = document.createElement("div");
 let box2 = document.createElement("h2");
 
-textBox1.innerHTML = noteText;
-textBox1.setAttribute
+stickyNote.innerHTML = noteText;
+stickyNote.setAttribute
 ("style", "width:370px; margin: 28px; height: 370px; font-size:30px; padding: 25px; margin-top: 10px;box-shadow:0px 10px 24px 0px rgba(0,0,0,0.75)")
 
 
-textBox1.appendChild(box2);
-textBox1.style.margin = margin();
-textBox1.style.transform = rotate();
-textBox1.style.background= color();
-notesContainer.insertAdjacentElement("beforeend", textBox1);
-
-textBox1.addEventListener("dblclick", () =>{
+stickyNote.appendChild(box2);
+stickyNote.style.margin = margin();
+stickyNote.style.transform = rotate();
+stickyNote.style.background= color();
+notesContainer.insertAdjacentElement("beforeend", stickyNote);
+stickyNote.addEventListener("dblclick", () =>{
   textBox1.remove();
 })
-
 document.getElementById("note-text").value = "";
 }
+
 function typeNote(){
   if (textContainer.style.display == "none"){
     textContainer.style.display = "block";
@@ -57,8 +56,8 @@ function rotate(){
 }
 function color(){
   let randomColors = ["#F7567C", "#99E1D9", "#93FF96", "#F79400", "#A833B9", "#C493FF"]
-if (i> randomColors.length - 1){
-  i = 0;
-}
-return randomColors[i++];
+  if (i> randomColors.length - 1){
+    i = 0;
+  }
+  return randomColors[i++];
 }

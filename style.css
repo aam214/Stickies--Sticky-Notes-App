@@ -85,3 +85,9 @@ bottom: 5%;
   left: 5%;
   top: 5%;
 }
+@media (max-width:1820px){
+.text-container{
+  display: block;
+  margin: 0 auto;
+}
+}
