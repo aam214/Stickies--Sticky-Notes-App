@@ -31,7 +31,7 @@ stickyNote.style.margin = margin();
 stickyNote.style.transform = rotate();
 stickyNote.style.background= color();
 notesContainer.insertAdjacentElement("beforeend", stickyNote);
-stickyNote.addEventListener("click", () =>{
+stickyNote.addEventListener("dblclick", () =>{
   stickyNote.remove();
 })
 document.getElementById("note-text").value = "";
