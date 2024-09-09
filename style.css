@@ -85,7 +85,9 @@ i:hover{
   width:320px; 
   margin: 20px; 
   height: 320px;
-  font-size: 20px; 
+  font-size: 24px; 
+  color: black;
+  font-weight: bold;
   padding: 50px; 
   margin-top: 10px;
   box-shadow:0px 10px 24px 0px rgba(0,0,0,0.75);

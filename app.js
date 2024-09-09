@@ -30,7 +30,7 @@ stickyNote.style.background= color();
 notesContainer.insertAdjacentElement("beforeend", stickyNote);
 stickyNote.addEventListener("click", () =>{
   stickyNote.remove();
-})
+});
 document.getElementById("note-text").value = "";
 }
 
