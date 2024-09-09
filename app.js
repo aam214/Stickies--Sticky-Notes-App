@@ -3,7 +3,7 @@ const textContainer = document.querySelector(".text-container");
 const proceed = document.getElementById("proceed");
 const exit = document.getElementById("exit");
 
-var i = 0;
+let i = 0;
 
 exit.addEventListener("click", () => {
 typeNote();
@@ -13,7 +13,6 @@ createNote();
 })
 
 function exitNote(){
-
 }
 
 function createNote(){
@@ -22,16 +21,14 @@ let stickyNote = document.createElement("div");
 let newBox = document.createElement("div");
 
 stickyNote.innerHTML = noteText;
-stickyNote.setAttribute
-("style", "width:370px; margin: 20px; height: 370px; font-size:30px; padding: 25px; margin-top: 10px;box-shadow:0px 10px 24px 0px rgba(0,0,0,0.75)")
-
+stickyNote.classList.add("sticky-style");
 
 stickyNote.appendChild(newBox);
 stickyNote.style.margin = margin();
 stickyNote.style.transform = rotate();
 stickyNote.style.background= color();
 notesContainer.insertAdjacentElement("beforeend", stickyNote);
-stickyNote.addEventListener("dblclick", () =>{
+stickyNote.addEventListener("click", () =>{
   stickyNote.remove();
 })
 document.getElementById("note-text").value = "";
