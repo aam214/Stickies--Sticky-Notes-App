@@ -36,7 +36,7 @@ stickyNote.addEventListener("mouseover", () => {
 stickyNote.addEventListener("mouseout", () => {
   stickyNote.style.transform = "scale(1)"; 
 });
-stickyNote.addEventListener("click", () =>{
+stickyNote.addEventListener("dblclick", () =>{
   stickyNote.remove();
 });
 document.getElementById("note-text").value = "";
