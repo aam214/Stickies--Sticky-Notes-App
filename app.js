@@ -9,25 +9,33 @@ exit.addEventListener("click", () => {
 typeNote();
 })
 proceed.addEventListener("click", () => {
-createNote();
+saveNote();
 })
 
 function exitNote(){
 }
 
-function createNote(){
+function saveNote(){
 let noteText = document.getElementById("note-text").value;
 let stickyNote = document.createElement("div");
 let newBox = document.createElement("div");
 
 stickyNote.innerHTML = noteText;
 stickyNote.classList.add("sticky-style");
+stickyNote.classList.add("sticky-style:hover");
 
 stickyNote.appendChild(newBox);
 stickyNote.style.margin = margin();
 stickyNote.style.transform = rotate();
 stickyNote.style.background= color();
 notesContainer.insertAdjacentElement("beforeend", stickyNote);
+stickyNote.addEventListener("mouseover", () => {
+  stickyNote.style.transform = "scale(1.2)"; 
+});
+
+stickyNote.addEventListener("mouseout", () => {
+  stickyNote.style.transform = "scale(1)"; 
+});
 stickyNote.addEventListener("click", () =>{
   stickyNote.remove();
 });
